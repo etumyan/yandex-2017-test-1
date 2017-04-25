@@ -1,0 +1,9 @@
+.nav {
+  padding-top: 15px;
+}
+
+.nav__item {
+  display: inline-block;
+  margin-left: 15px;
+  line-height: 32px;
+}

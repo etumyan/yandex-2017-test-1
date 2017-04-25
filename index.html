@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Расписание лекций &mdash; Мобилизация</title>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="assets/vendor/normalize.css/normalize.css">
+    <link rel="stylesheet" href="assets/stylesheets/grid.css">
+    <link rel="stylesheet" href="assets/stylesheets/btn.css">
+    <link rel="stylesheet" href="assets/stylesheets/tag.css">
+    <link rel="stylesheet" href="assets/stylesheets/popover.css">
+    <link rel="stylesheet" href="assets/stylesheets/panel.css">
+    <link rel="stylesheet" href="assets/stylesheets/nav.css">
+    <link rel="stylesheet" href="assets/stylesheets/common.css">
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        <nav class="nav">
+          <div class="pull-right">
+            <span class="nav__item text-mute">Расписание</span>
+            <a class="nav__item" href="javascritp:;">Как проехать?</a>
+          </div>
+          <div class="logo">Яндекс</div>
+        </nav>
+        <div class="header__heading">
+          <h1>Расписание лекций</h1>
+          <h2>Мобилизация</h2>
+        </div>
+      </header>
+      <main class="main">
+        <div class="tag-list-wrapper">
+          <div class="tag-list" id="js-filter">
+            <div class="tag-list__label text-mute">Фильтр:</div>
+            <div class="tag-list__body" id="js-filter-param-list">
+              <span class="tag js-filter-param-list-item" onclick="filterRemoveParam.call(this);" data-type="school" data-value="Школа разработки интерфейсов">Школа разработки интерфейсов</span>
+            </div>
+          </div>
+        </div>
+        <div class="panel grid">
+          <div class="grid__cell">
+            <div class="content-list">
+              <div class="content-list__item content-list__item_disabled js-lecture-list-item" data-date="03 октября" data-speaker="Дмитрий Душкин" data-school="Школа разработки интерфейсов">
+                <div class="grid">
+                  <div class="grid__cell grid__cell_size_2">
+                    <a href="javascript:;" onclick="filterAddParam.call(this);" data-type="date">03 октября</a>
+                    <br>
+                    <span class="text-mute">11:45 &ndash; 13:15<br>Минкульт</span>
+                  </div>
+                  <div class="grid__cell grid__cell_size_6">
+                    <a href="javascript:;" class="content-list__item-title">Адаптивная вёрстка</a>
+                    <a href="javascript:;" onclick="filterAddParam.call(this);" data-type="school">Школа разработки интерфейсов</a>
+                  </div>
+                  <div class="grid__cell grid__cell_size_2">
+                    <div class="popover">
+                      <a href="javascript:;" class="popover__link" onclick="filterAddParam.call(this);" data-type="speaker">Дмитрий Душкин</a>
+                      <div class="popover__body">
+                        <div class="person-card">
+                          <img class="person-card__image" src="https://unsplash.it/g/240?random" alt="">
+                          <div class="person-card__body">
+                            <div class="person-card__name">Дмитрий Душкин</div>
+                            <div class="person-card__bio">
+                              <p>Кандидат технических наук, научный сотрудник ИПУ РАН с 2008 по 2013. Пришёл в Яндекс.Картинки в 2014 году, отвечал за мобильную версию и рост производительности сервиса.</p>
+                              <a href="emailto:dmitriydudushkin@example.com">dmitriydudushkin@example.com</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-mute">Яндекс</div>
+                  </div>
+                </div>
+              </div>
+              <div class="content-list__item content-list__item_disabled js-lecture-list-item" data-date="03 октября" data-speaker="Дмитрий Душкин" data-school="Школа разработки интерфейсов,Школа мобильной разработки">
+                <div class="grid">
+                  <div class="grid__cell grid__cell_size_2">
+                    <a href="javascript:;" onclick="filterAddParam.call(this);" data-type="date">03 октября</a>
+                    <br>
+                    <span class="text-mute">13:45 &ndash; 15:15<br>Прачечная</span>
+                  </div>
+                  <div class="grid__cell grid__cell_size_6">
+                    <a href="javascript:;" class="content-list__item-title">Работа с сенсорным пользовательским вводом</a>
+                    <a href="javascript:;" onclick="filterAddParam.call(this);" data-type="school">Школа разработки интерфейсов</a>,
+                    <a href="javascript:;" onclick="filterAddParam.call(this);" data-type="school">Школа мобильной разработки</a>
+                  </div>
+                  <div class="grid__cell grid__cell_size_2">
+                    <div class="popover">
+                      <a href="javascript:;" class="popover__link" onclick="filterAddParam.call(this);" data-type="speaker">Дмитрий Душкин</a>
+                      <div class="popover__body">
+                        <div class="person-card">
+                          <img class="person-card__image" src="https://unsplash.it/g/240?random" alt="">
+                          <div class="person-card__body">
+                            <div class="person-card__name">Дмитрий Душкин</div>
+                            <div class="person-card__bio">
+                              <p>Кандидат технических наук, научный сотрудник ИПУ РАН с 2008 по 2013. Пришёл в Яндекс.Картинки в 2014 году, отвечал за мобильную версию и рост производительности сервиса.</p>
+                              <a href="emailto:dmitriydudushkin@example.com">dmitriydudushkin@example.com</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-mute">Яндекс</div>
+                  </div>
+                </div>
+              </div>
+              <div class="content-list__item js-lecture-list-item" data-date="02 октября" data-speaker="Максим Васильев" data-school="Школа разработки интерфейсов">
+                <div class="grid">
+                  <div class="grid__cell grid__cell_size_2">
+                    <a href="javascript:;" onclick="filterAddParam.call(this);" data-type="date">02 октября</a>
+                    <br>
+                    <span class="text-mute">13:45 &ndash; 15:15<br>Зоопарк</span>
+                  </div>
+                  <div class="grid__cell grid__cell_size_6">
+                    <a href="javascript:;" class="content-list__item-title">Мультимедиа: возможности браузера</a>
+                    <a href="javascript:;" onclick="filterAddParam.call(this);" data-type="school">Школа разработки интерфейсов</a>
+                  </div>
+                  <div class="grid__cell grid__cell_size_2">
+                    <div class="popover">
+                      <a href="javascript:;" class="popover__link" onclick="filterAddParam.call(this);" data-type="speaker">Максим Васильев</a>
+                      <div class="popover__body">
+                        <div class="person-card">
+                          <img class="person-card__image" src="https://unsplash.it/g/240?random" alt="">
+                          <div class="person-card__body">
+                            <div class="person-card__name">Дмитрий Душкин</div>
+                            <div class="person-card__bio">
+                              <p>Во фронтенд-разработке с 2007 года. До 2013-го, когда пришёл в Яндекс, работал технологом в студии Лебедева и других компаниях.</p>
+                              <a href="emailto:maximvasilev@example.com">maximvasilev@example.com</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-mute">Яндекс</div>
+                  </div>
+                  <div class="grid__cell grid__cell_size_2 text-right">
+                    <a href="javascript:;" class="btn">Материалы</a>
+                  </div>
+                </div>
+              </div>
+              <div class="content-list__item js-lecture-list-item" data-date="02 октября" data-speaker="Сергей Бережной" data-school="Школа разработки интерфейсов,Школа мобильной разработки">
+                <div class="grid">
+                  <div class="grid__cell grid__cell_size_2">
+                    <a href="javascript:;" onclick="filterAddParam.call(this);" data-type="date">02 октября</a>
+                    <br>
+                    <span class="text-mute">13:45 &ndash; 15:15<br>Кино</span>
+                  </div>
+                  <div class="grid__cell grid__cell_size_6">
+                    <a href="javascript:;" class="content-list__item-title">Нативные приложения на веб-технологиях</a>
+                    <a href="javascript:;" onclick="filterAddParam.call(this);" data-type="school">Школа разработки интерфейсов</a>,
+                    <a href="javascript:;" onclick="filterAddParam.call(this);" data-type="school">Школа мобильной разработки</a>
+                  </div>
+                  <div class="grid__cell grid__cell_size_2">
+                    <div class="popover">
+                      <a href="javascript:;" class="popover__link" onclick="filterAddParam.call(this);" data-type="speaker">Сергей Бережной</a>
+                      <div class="popover__body">
+                        <div class="person-card">
+                          <img class="person-card__image" src="https://unsplash.it/g/240?random" alt="">
+                          <div class="person-card__body">
+                            <div class="person-card__name">Сергей Бережной</div>
+                            <div class="person-card__bio">
+                              <p>Веб-разработчик в Яндексе с 2005 года. Успел поработать над Поиском, Почтой, Поиском по блогам, Я.ру, Картинками, Видео.</p>
+                              <a href="emailto:sergeyberezhnoy@example.com">sergeyberezhnoy@example.com</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-mute">Яндекс</div>
+                  </div>
+                  <div class="grid__cell grid__cell_size_2 text-right">
+                    <a href="javascript:;" class="btn">Материалы</a>
+                  </div>
+                </div>
+              </div>
+              <div class="content-list__item js-lecture-list-item" data-date="01 октября" data-speaker="Андрей Морозов" data-school="Школа разработки интерфейсов">
+                <div class="grid">
+                  <div class="grid__cell grid__cell_size_2">
+                    <a href="javascript:;" onclick="filterAddParam.call(this);" data-type="date">01 октября</a>
+                    <br>
+                    <span class="text-mute">13:45 &ndash; 15:15<br>Аквариум</span>
+                  </div>
+                  <div class="grid__cell grid__cell_size_6">
+                    <a href="javascript:;" class="content-list__item-title">Клиентская оптимизация: базовые знания и лучшие практики</a>
+                    <a href="javascript:;" onclick="filterAddParam.call(this);" data-type="school">Школа разработки интерфейсов</a>
+                  </div>
+                  <div class="grid__cell grid__cell_size_2">
+                    <div class="popover">
+                      <a href="javascript:;" class="popover__link" onclick="filterAddParam.call(this);" data-type="speaker">Андрей Морозов</a>
+                      <div class="popover__body">
+                        <div class="person-card">
+                          <img class="person-card__image" src="https://unsplash.it/g/240?random" alt="">
+                          <div class="person-card__body">
+                            <div class="person-card__name">Андрей Морозов</div>
+                            <div class="person-card__bio">
+                              <p>Окончил радиофизический факультет Киевского Национального Университета. Автор трёх патентных заявок. В Яндексе с 2014 года, разрабатывает интерфейсы Яндекс.Карт.</p>
+                              <a href="emailto:andreymorozov@example.com">andreymorozov@example.com</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-mute">Яндекс</div>
+                  </div>
+                  <div class="grid__cell grid__cell_size_2 text-right">
+                    <a href="javascript:;" class="btn">Материалы</a>
+                  </div>
+                </div>
+              </div>
+              <div class="content-list__item js-lecture-list-item" data-date="01 октября" data-speaker="Иван Карев" data-school="Школа мобильной разработки,Школа мобильного дизайна">
+                <div class="grid">
+                  <div class="grid__cell grid__cell_size_2">
+                    <a href="javascript:;" onclick="filterAddParam.call(this);" data-type="date">01 октября</a>
+                    <br>
+                    <span class="text-mute">13:45 &ndash; 15:15<br>Минкульт</span>
+                  </div>
+                  <div class="grid__cell grid__cell_size_6">
+                    <a href="javascript:;" class="content-list__item-title">Клиентская оптимизация: мобильные устройства и инструменты</a>
+                    <a href="javascript:;" onclick="filterAddParam.call(this);" data-type="school">Школа мобильной разработки</a>,
+                    <a href="javascript:;" onclick="filterAddParam.call(this);" data-type="school">Школа мобильного дизайна</a>
+                  </div>
+                  <div class="grid__cell grid__cell_size_2">
+                    <div class="popover">
+                      <a href="javascript:;" class="popover__link" onclick="filterAddParam.call(this);" data-type="speaker">Иван Карев</a>
+                      <div class="popover__body">
+                        <div class="person-card">
+                          <img class="person-card__image" src="https://unsplash.it/g/240?random" alt="">
+                          <div class="person-card__body">
+                            <div class="person-card__name">Иван Карев</div>
+                            <div class="person-card__bio">
+                              <p>Окончил факультет ВМК (вычислительной математики и кибернетики) МГУ им. М.В. Ломоносова, занимается веб-программированием с 2007 года.</p>
+                              <a href="emailto:ivankarev@example.com">ivankarev@example.com</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-mute">Яндекс</div>
+                  </div>
+                  <div class="grid__cell grid__cell_size_2 text-right">
+                    <a href="javascript:;" class="btn">Материалы</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hide" id="js-lecture-list-empty" style="padding: 15px 0;">Ничего не найдено. Попробуйте изменить параметры фильтрации или обновите страницу.</div>
+          </div>
+        </div>
+        <div class="panel-note text-mute">Для фильтрации списка кликните по дате лекции, имени спикера или наименованию школы.</div>
+      </main>
+      <footer class="footer grid">
+        <div class="grid__cell text-mute">
+          &copy; 2017 &mdash; Яндекс
+        </div>
+      </footer>
+    </div>
+    <script src="assets/javascripts/app.js"></script>
+  </body>
+</html>

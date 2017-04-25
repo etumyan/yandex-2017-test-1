@@ -1,0 +1,190 @@
+/*----------------------------------------------*\
+  COMMON
+
+  Core project styles and helpers
+\*----------------------------------------------*/
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  background: #d2d2d2 radial-gradient(circle at 75% 25%, #fff, #d2d2d2);
+}
+
+body {
+  margin: 0;
+  color: #313131;
+  font-size: 14px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+}
+
+a {
+  color: #669;
+  text-decoration: none;
+  transition: color .25s;
+}
+
+a:hover {
+  color: #e61400;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-mute {
+  color: #969696;
+}
+
+/* HEADER */
+
+.logo {
+  width: 80px;
+  height: 32px;
+  text-indent: -99999px;
+  background: url('../images/logo.svg') 0 -32px no-repeat;
+  background-size: 80px 64px;
+}
+
+.header {
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+}
+
+.header__heading {
+  margin: 150px auto 0;
+  max-width: 520px;
+  text-align: center;
+}
+
+.header__heading > h1 {
+  color: #e61400;
+  font-weight: 200;
+  font-size: 42px;
+  letter-spacing: 1px;
+}
+
+.header__heading > h2 {
+  margin-top: 10px;
+  font-weight: 200;
+}
+
+/* MAIN */
+
+.main {
+  margin-bottom: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* FOOTER */
+
+.footer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid #c7c7c7;
+}
+
+/* CONTENT LIST */
+
+.content-list__item {
+  margin-bottom: -1px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.content-list__item_disabled {
+  opacity: .5;
+  transition: opacity .25s;
+}
+
+.content-list__item_disabled:hover {
+  opacity: 1;
+}
+
+.content-list__item-title {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+/* PERSON CARD */
+
+.person-card__image {
+  display: block;
+  float: left;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.person-card__name {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.person-card__body {
+  margin-left: 135px;
+}
+
+@media(max-width: 480px) {
+  .main {
+    margin-bottom: 0;
+  }
+  .header .nav .pull-right {
+    float: none;
+    text-align: center;
+  }
+  .header .nav .logo {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header__heading {
+    margin-top: 80px;
+  }
+  .tag-list-wrapper {
+    display: none;
+  }
+  .content-list__item .grid {
+    display: block;
+  }
+  .content-list__item .grid__cell {
+    margin-bottom: 10px;
+    max-width: 100%;
+  }
+}
